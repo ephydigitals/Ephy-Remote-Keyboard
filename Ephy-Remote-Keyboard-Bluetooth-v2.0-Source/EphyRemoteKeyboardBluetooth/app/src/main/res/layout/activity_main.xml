@@ -1,0 +1,23 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="#F4F7FB">
+<LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EPHY  •  DIGITAL" android:textColor="#2563EB" android:textStyle="bold" android:textSize="14sp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Remote Keyboard" android:textColor="#0F172A" android:textSize="30sp" android:textStyle="bold"/>
+<TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Not connected" android:textColor="#334155" android:textSize="16sp"/>
+<Button android:id="@+id/enable" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. Enable Bluetooth keyboard"/>
+<Button android:id="@+id/select" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. Choose paired Windows laptop"/>
+<Button android:id="@+id/disconnect" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Disconnect"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Type here (your phone keyboard opens)" android:textColor="#0F172A" android:textStyle="bold"/>
+<EditText android:id="@+id/typing" android:layout_width="match_parent" android:layout_height="130dp" android:gravity="top" android:inputType="textMultiLine|textNoSuggestions" android:hint="Tap here to type on your laptop..." android:backgroundTint="#2563EB"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:id="@+id/enter" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Enter"/>
+<Button android:id="@+id/backspace" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="⌫"/>
+<Button android:id="@+id/tab" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Tab"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:id="@+id/left" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="←"/>
+<Button android:id="@+id/up" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="↑"/>
+<Button android:id="@+id/down" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="↓"/>
+<Button android:id="@+id/right" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="→"/>
+</LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Pair your laptop in Android Bluetooth settings first. On Windows: Settings → Bluetooth &amp; devices → Add device. HID availability depends on phone firmware." android:textColor="#475569" android:textSize="13sp"/>
+</LinearLayout></ScrollView>
